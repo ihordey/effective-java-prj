@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item16;
+
 // Wrapper class - uses composition in place of inheritance - Page 84
 
 import java.util.*;

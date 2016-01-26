@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item20.hierarchy;
+
 class Circle extends Figure {
     final double radius;
 

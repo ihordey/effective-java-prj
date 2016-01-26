@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item16;
+
 // Broken - Inappropriate use of inheritance!
 
 import java.util.*;

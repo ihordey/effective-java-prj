@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item20.tagged_class;
+
 // Tagged class - vastly inferior to a class hierarchy!
 class Figure {
     enum Shape { RECTANGLE, CIRCLE };

@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item19;
+
 // Constant utility class
 
 public class PhysicalConstants {

@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item18;
+
 // Concrete implementation built atop skeletal implementation - Page 95
 
 import java.util.*;

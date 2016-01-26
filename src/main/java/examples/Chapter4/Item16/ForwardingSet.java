@@ -1,3 +1,5 @@
+package  examples.Chapter4.Item16;
+
 // Reusable forwarding class - Page 84
 
 import java.util.*;
