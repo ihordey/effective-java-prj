@@ -1,3 +1,5 @@
+package examples.Chapter3.Item8;
+
 // Broken - violates symmetry! - Pages 36-37
 
 public final class CaseInsensitiveString {
@@ -10,10 +12,11 @@ public final class CaseInsensitiveString {
     }
 
     // Broken - violates symmetry!
-    @Override public boolean equals(Object o) {
+    @Override
+    public boolean equals(Object o) {
         if (o instanceof CaseInsensitiveString)
             return s.equalsIgnoreCase(
-                ((CaseInsensitiveString) o).s);
+                    ((CaseInsensitiveString) o).s);
         if (o instanceof String)  // One-way interoperability!
             return s.equalsIgnoreCase((String) o);
         return false;

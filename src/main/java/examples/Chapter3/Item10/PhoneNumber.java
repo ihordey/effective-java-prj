@@ -1,8 +1,10 @@
-// Adding a clone method to PhoneNumber - page 55
+package examples.Chapter3.Item10;
+
+// Adding a toString method to PhoneNumber - page 52
 
 import java.util.*;
 
-public final class PhoneNumber implements Cloneable {
+public final class PhoneNumber {
     private final short areaCode;
     private final short prefix;
     private final short lineNumber;
@@ -63,19 +65,10 @@ public final class PhoneNumber implements Cloneable {
                              areaCode, prefix, lineNumber);
     }
 
-    @Override public PhoneNumber clone() {
-        try {
-            return (PhoneNumber) super.clone();
-        } catch(CloneNotSupportedException e) {
-            throw new AssertionError();  // Can't happen
-        }
-    }
-
     public static void main(String[] args) {
-        PhoneNumber pn = new PhoneNumber(707, 867, 5309);
         Map<PhoneNumber, String> m
             = new HashMap<PhoneNumber, String>();
-        m.put(pn, "Jenny");
-        System.out.println(m.get(pn.clone()));
+        m.put(new PhoneNumber(707, 867, 5309), "Jenny");
+        System.out.println(m);
     }
 }
